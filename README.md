@@ -8,7 +8,7 @@ An end-to-end data science and machine learning project analyzing how daily time
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 This repository features a complete data analytics pipeline applied to a dataset of 2,000 student survey responses collected between August 2023 and May 2024. The study combines descriptive statistical profiling, inferential hypothesis testing, machine learning pipelines, and constrained numerical optimization to evaluate lifestyle trade-offs and prescribe balanced student daily routines.
 
@@ -21,7 +21,7 @@ This repository features a complete data analytics pipeline applied to a dataset
 
 ---
 
-## 📊 Key Findings
+## Key Findings
 
 - Zero-Sum Time Allocation: Every observation strictly satisfies a 24.0-hour daily sum constraint across five activity categories ($Hours_{Total} = 24.0$), creating direct competition between academic and personal activities.
 - Primary GPA Determinant: Daily study hours serve as the single dominant predictor of academic achievement ($r = 0.73$), accounting for over 50% of CGPA variance.
@@ -33,7 +33,7 @@ This repository features a complete data analytics pipeline applied to a dataset
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 ├── data/
@@ -53,7 +53,7 @@ This repository features a complete data analytics pipeline applied to a dataset
 
 ---
 
-## 🚀 Installation & Setup
+## Installation & Setup
 
 ### Prerequisites
 
@@ -97,7 +97,7 @@ jupyter notebook notebooks/Student_Lifestyle_Analysis.ipynb
 
 ---
 
-## 🔬 Tech Stack & Tools
+## Tech Stack & Tools
 
 - Data Manipulation: pandas, numpy
 - Statistical Analysis: scipy.stats (ANOVA, Tukey HSD, Welch's t-test, Chi-Square)
@@ -106,7 +106,7 @@ jupyter notebook notebooks/Student_Lifestyle_Analysis.ipynb
 
 ---
 
-## ⚠️ Challenges & Methodological Limitations
+## Challenges & Methodological Limitations
 
 - Model Expected Value vs. Individual Peaks: The optimizer predicts an expected mean GPA of 3.52 / 4.00 under healthy constraints. While individual top performers in the dataset reach $4.00$, parametric linear models estimate population expected values rather than extreme individual outliers.
 - Multicollinearity: The 24-hour total daily limit creates exact linear dependency among activity features. Regularized models (Ridge Regression) were implemented to ensure stable coefficient estimations.
@@ -114,6 +114,6 @@ jupyter notebook notebooks/Student_Lifestyle_Analysis.ipynb
 
 ---
 
-## 📜 License
+## License
 
 Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
